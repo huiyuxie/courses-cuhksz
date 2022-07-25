@@ -1,0 +1,81 @@
+# Q1
+数据类型:Number/String/List/Tuple/Set/Dictionary
+可变:List/Dictionary/Set
+不可变:Number/String/Tuple
+
+# Q2
+__init__:初始化对象
+__new__:创建新对象
+
+# Q3
+list=['a','1','b','2']
+dict={}
+count=0
+for key in list:
+    count=count+1
+	if (count%2==1):
+		dict[key]=list[count]
+print(dict)
+		
+# Q4
+dict={'a':'1','b':'2'}
+list=[]
+for key in dict:
+	list.append(key)
+	list.append(dict[key])
+print(list)
+
+# Q5
+f=open("sample.txt")
+lines=f.readline()
+for line in lines:
+	print(line)
+f.close()
+
+# Q6 (用R实现)
+nums<-0
+for (i in 1:100){
+	if ((i%%2==1)&(i%%9!=0)){
+		nums<-c(nums,i)
+	}
+}
+print(sum(nums))	
+
+# Q7 (用R实现)
+nums<-rep(seq(1,30),10)
+count<-0
+while (TRUE){
+  count<-count+1
+  if (length(unique(nums))==15){
+    break
+  }
+  if (count%%9==0){
+    lab<-which(nums==nums[count])
+    nums<-nums[-lab]
+  }
+}
+print(unique(nums))
+
+# Q8 (用Python实现)
+stack=[1,2,3,4,5]
+stack1=[]
+while (len(stack)!=0):
+    num=stack.pop()
+    stack1.append(num)
+print(stack1)
+	
+# Q9 (用R实现)
+nums<-runif(10,0,2)
+nums<-round(nums)
+for (i in unique(nums)){
+  if (length(which(nums==i))>length(nums)/2){
+    print(i)
+  }
+}
+
+
+
+
+
+
+		
