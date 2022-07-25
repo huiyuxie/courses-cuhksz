@@ -1,2 +1,2 @@
 # course-cuhksz
-Courses form cuhksz, labeled as sta, csc, dda, and mat.
+Courses from cuhksz, labeled as sta, csc, dda, and mat.
