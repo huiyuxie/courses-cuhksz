@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyOperatingSystem</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>System</string>
+    </property>
+    <addaction name="actionlock"/>
+    <addaction name="actionshutdown"/>
+    <addaction name="actionsetwallpaper"/>
+   </widget>
+   <widget class="QMenu" name="menuApplications">
+    <property name="title">
+     <string>Applications</string>
+    </property>
+    <addaction name="actioncalculator"/>
+    <addaction name="actioncalendar"/>
+    <addaction name="actionMemory_Monitor"/>
+    <addaction name="actionFile_System"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuSystem"/>
+   <addaction name="menuApplications"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionlock">
+   <property name="text">
+    <string>lock</string>
+   </property>
+  </action>
+  <action name="actionreboot">
+   <property name="text">
+    <string>reboot</string>
+   </property>
+  </action>
+  <action name="actionshutdown">
+   <property name="text">
+    <string>shutdown</string>
+   </property>
+  </action>
+  <action name="actionnew">
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actioncalculator">
+   <property name="text">
+    <string>Calculator</string>
+   </property>
+  </action>
+  <action name="actionclock">
+   <property name="text">
+    <string>clock</string>
+   </property>
+  </action>
+  <action name="actioncalendar">
+   <property name="text">
+    <string>Calendar</string>
+   </property>
+  </action>
+  <action name="actionsetwal">
+   <property name="text">
+    <string>setbackground</string>
+   </property>
+  </action>
+  <action name="actionsetwallpaper">
+   <property name="text">
+    <string>setwallpaper</string>
+   </property>
+  </action>
+  <action name="actionMemory_Monitor">
+   <property name="text">
+    <string>Memory Monitor</string>
+   </property>
+  </action>
+  <action name="actionFile_System">
+   <property name="text">
+    <string>File System</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
